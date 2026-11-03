@@ -27,6 +27,17 @@ In scope: consumer apps that read heart rate, HRV, sleep, menstrual cycle, or fi
 
 See [METHODOLOGY.md](METHODOLOGY.md).
 
+## Tooling
+
+| Path | What it does |
+|---|---|
+| `tools/pe_capture.py` | mitmproxy addon: one JSON line per request (destination, SDK, step, health-like fields); logs refused TLS handshakes as "not observable" |
+| `tools/pe_step.py` | switch the current test-script step during a capture |
+| `tools/pe_summary.py` | per-SDK markdown summary with counts only, no payload values |
+| `data/sdk_domains.json` | seed map of SDK domains to categories |
+
+Setup and a full run: [docs/SETUP-iOS.md](docs/SETUP-iOS.md). Tests: `python3 -m pytest tests`.
+
 ## Conflict of interest
 
 The maintainer is also the independent developer of a commercial breathing app. That app is included in the audit sample under the same method, and its results are published like any other. Neither that app nor its publisher will use these findings in marketing.
