@@ -1,0 +1,6 @@
+# Raw captures contain payloads: never commit.
+captures/
+*.mitm
+__pycache__/
+.pytest_cache/
+.DS_Store
