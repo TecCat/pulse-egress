@@ -34,9 +34,10 @@ See [METHODOLOGY.md](METHODOLOGY.md).
 | `tools/pe_capture.py` | mitmproxy addon: one JSON line per request (destination, SDK, step, health-like fields); logs refused TLS handshakes as "not observable" |
 | `tools/pe_step.py` | switch the current test-script step during a capture |
 | `tools/pe_summary.py` | per-SDK markdown summary with counts only, no payload values |
+| `tools/pe_privacy_report.py` | summarise an iOS App Privacy Report export per app and SDK (no proxy needed) |
 | `data/sdk_domains.json` | seed map of SDK domains to categories |
 
-Setup and a full run: [docs/SETUP-iOS.md](docs/SETUP-iOS.md). Tests: `python3 -m pytest tests`.
+Zero-cost check: [docs/APP-PRIVACY-REPORT.md](docs/APP-PRIVACY-REPORT.md). Full capture: [docs/SETUP-iOS.md](docs/SETUP-iOS.md). Tests: `python3 -m pytest tests`.
 
 ## Conflict of interest
 
