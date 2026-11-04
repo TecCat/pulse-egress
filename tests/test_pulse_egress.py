@@ -74,6 +74,9 @@ def test_longest_suffix_wins_and_first_party_overrides():
     assert dm.classify("api.mixpanel.com")["sdk"] == "Mixpanel"
     assert dm.classify("api.example-sleep.com")["category"] == "first_party"
     assert dm.classify("notmixpanel.com")["sdk"] == "unknown"
+    # Seen in real App Privacy Reports, 2026-11-04.
+    assert dm.classify("app-analytics-services.com")["sdk"] == "Google Analytics for Firebase"
+    assert dm.classify("analytics.tiktok.com")["category"] == "advertising"
 
 
 # --- summary --------------------------------------------------------------

@@ -72,7 +72,7 @@ def aggregate(records: List[dict], domains: DomainMap, apps: Optional[List[str]]
     return dict(sorted(out.items()))
 
 
-THIRD_PARTY = {"analytics", "advertising", "attribution", "crash_reporting", "messaging", "payments", "remote_config"}
+THIRD_PARTY = {"analytics", "advertising", "attribution", "crash_reporting", "messaging", "payments", "remote_config", "ip_lookup"}
 
 
 def to_markdown(apps: Dict[str, Dict], anonymize: bool = False) -> str:

@@ -1,5 +1,5 @@
 {
-  "_comment": "Seed list, hand-curated Nov 2026. Categories: analytics, advertising, attribution, crash_reporting, messaging, payments, remote_config, platform. Extend from Exodus Privacy / DuckDuckGo Tracker Radar during P1.",
+  "_comment": "Seed list, hand-curated Nov 2026. Categories: analytics, advertising, attribution, crash_reporting, messaging, payments, remote_config, platform, ip_lookup. Extend from Exodus Privacy / DuckDuckGo Tracker Radar during P1.",
   "domains": [
     {"suffix": "app-measurement.com", "sdk": "Google Analytics for Firebase", "category": "analytics"},
     {"suffix": "firebaselogging.googleapis.com", "sdk": "Firebase", "category": "analytics"},
@@ -44,6 +44,32 @@
     {"suffix": "mzstatic.com", "sdk": "Apple platform", "category": "platform"},
     {"suffix": "apple-cloudkit.com", "sdk": "Apple platform", "category": "platform"},
     {"suffix": "gstatic.com", "sdk": "Google platform", "category": "platform"},
-    {"suffix": "googleapis.com", "sdk": "Google APIs (unspecified)", "category": "platform"}
+    {"suffix": "googleapis.com", "sdk": "Google APIs (unspecified)", "category": "platform"},
+    {"suffix": "app-analytics-services.com", "sdk": "Google Analytics for Firebase", "category": "analytics"},
+    {"suffix": "analytics.google.com", "sdk": "Google Analytics", "category": "analytics"},
+    {"suffix": "googletagmanager.com", "sdk": "Google Tag Manager", "category": "analytics"},
+    {"suffix": "fundingchoicesmessages.google.com", "sdk": "Google consent (Funding Choices)", "category": "advertising"},
+    {"suffix": "connect.facebook.net", "sdk": "Meta SDK", "category": "advertising"},
+    {"suffix": "fbcdn.net", "sdk": "Meta CDN", "category": "platform"},
+    {"suffix": "tiktok.com", "sdk": "TikTok SDK", "category": "advertising"},
+    {"suffix": "tiktokw.us", "sdk": "TikTok SDK", "category": "advertising"},
+    {"suffix": "applovin.com", "sdk": "AppLovin", "category": "advertising"},
+    {"suffix": "moloco.com", "sdk": "Moloco", "category": "advertising"},
+    {"suffix": "adsmoloco.com", "sdk": "Moloco", "category": "advertising"},
+    {"suffix": "inmobi.com", "sdk": "InMobi", "category": "advertising"},
+    {"suffix": "vungle.com", "sdk": "Vungle (Liftoff)", "category": "advertising"},
+    {"suffix": "dwin1.com", "sdk": "Awin", "category": "attribution"},
+    {"suffix": "customer.io", "sdk": "Customer.io", "category": "messaging"},
+    {"suffix": "superwall.com", "sdk": "Superwall", "category": "payments"},
+    {"suffix": "superwalleditor.com", "sdk": "Superwall", "category": "payments"},
+    {"suffix": "adaptytech.com", "sdk": "Adapty", "category": "payments"},
+    {"suffix": "stripe.com", "sdk": "Stripe", "category": "payments"},
+    {"suffix": "stripe.network", "sdk": "Stripe", "category": "payments"},
+    {"suffix": "paddle.com", "sdk": "Paddle", "category": "payments"},
+    {"suffix": "profitwell.com", "sdk": "ProfitWell", "category": "payments"},
+    {"suffix": "firebaseio.com", "sdk": "Firebase Realtime Database", "category": "platform"},
+    {"suffix": "mux.com", "sdk": "Mux video", "category": "platform"},
+    {"suffix": "ipify.org", "sdk": "IP lookup (ipify)", "category": "ip_lookup"},
+    {"suffix": "ip-api.com", "sdk": "IP lookup (ip-api)", "category": "ip_lookup"}
   ]
 }
